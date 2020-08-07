@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.0.1">
+  <title>ฟอมใบสั่ง</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Thasadith:wght@700&display=swap" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    body {
+      font-family: 'Thasadith', sans-serif;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="form-validation.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+  <div class="container">
+    <div class="py-5 text-center">
+      <i class="fas fa-traffic-light fa-8x text-danger"></i>
+      <h2>ใบสั่งเจ้าพนักงานจราจรหรือพนักงานเจ้าหน้าที่</h2>
+      <p class="lead">Traffic Ticket issued by Traffic Officers or Competent Officials.</p>
+    </div>
+
+    <!-- <div class="row"> -->
+    <div class="container">
+    </div>
+    <div class="container">
+      <form class="needs-validation">
+        <h4>เลขที่ใบสั่ง XXXXXXX</h4>
+        <h5><b>Traffic Ticket No.XXXXXXX</b></h5>
+        <h5><label for="username"> ด้วยผู้ขับขี่</label></h5>
+        <h6>Driver of:</h6>
+        <div class="mb-3 ">
+          <div class="row mb-3">
+
+            <div class="col-md-3">
+              <input type="radio" name="drive" required /> รถจักรยานยนต์
+              <div class="container">Motorcycle</div>
+            </div>
+            <div class="col-md-3">
+              <input type="radio" name="drive" required /> รถยนต์นั่งส่วนบุคคล
+              <div class="container">Private Car</div>
+            </div>
+            <div class="col-md-3">
+              <input type="radio" name="drive" required /> รถประเภทอื่น
+              <div class="container">Other Vehicle</div>
+            </div>
+            <div class="col-md-3">
+              <input type="radio" name="drive" required /> รถขนส่ง
+              <div class="container">Truk</div>
+            </div>
+          </div>
+          <!-- ยี่ห้อ  
+        <input type="text" class="form-control">   -->
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <h5><label for="firstName">ยี่ห้อ/Marque :</label></h5>
+              <!-- <input type="text" class="form-control" id="firstName" placeholder="" value="" required> -->
+              <select class="custom-select">
+                <option selected>--- กรุณาเลือกยี่ห้อรถ ---</option>
+                <option value="1">Toyota</option>
+                <option value="2">Honda</option>
+                <option value="3">Mazda</option>
+                <option value="4">Nissan</option>
+                <option value="5">Mitsubishi</option>
+                <option value="6">Suzuki</option>
+                <option value="7">Benz</option>
+                <option value="8">BMW</option>
+                <option value="9">MG</option>
+                <option value="10">Isuzu</option>
+                <option value="11">Chevrolet</option>
+              </select>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <h5><label for="lastName">จังหวัด/Province :</label></h5>
+              <!-- <input type="text" class="form-control" id="lastName" placeholder="" value="" required> -->
+              <select class="custom-select">
+                <option selected>--- กรุณาเลือกจังหวัด ---</option>
+                <option value="1">นครราชสีมา</option>
+                <option value="2">เชียงใหม่</option>
+                <option value="3">กาญจนบุรี</option>
+                <option value="4">ตาก</option>
+                <option value="5">อุบลราชธานี</option>
+                <option value="6">สุราษฎร์ธานี</option>
+                <option value="7">ชัยภูมิ</option>
+                <option value="8">แม่ฮ่องสอน</option>
+                <option value="9">เพชรบูรณ์</option>
+                <option value="10">ลำปาง</option>
+                <option value="11">อุดรธานี</option>
+                <option value="12">เชียงราย</option>
+                <option value="13">น่าน</option>
+                <option value="14">เลย</option>
+                <option value="15">ขอนแก่น</option>
+                <option value="16">พิษณุโลก</option>
+                <option value="17">บุรีรัมย์</option>
+                <option value="18">นครศรีธรรมราช</option>
+                <option value="19">สกลนคร</option>
+                <option value="20">นครสวรรค์</option>
+                <option value="21">ศรีสะเกษ</option>
+                <option value="22">กำแพงเพชร</option>
+                <option value="23">ร้อยเอ็ด</option>
+                <option value="24">สุรินทร์</option>
+                <option value="25">อุตรดิตถ์</option>
+                <option value="26">สงขลา</option>
+                <option value="27">สระแก้ว</option>
+                <option value="28">กาฬสินธุ์</option>
+                <option value="29">อุทัยธานี</option>
+                <option value="30">สุโขทัย</option>
+                <option value="31">แพร่</option>
+                <option value="32">ประจวบคีรีขันธ์</option>
+                <option value="33">จันทบุรี</option>
+                <option value="34">พะเยา</option>
+                <option value="35">เพชรบุรี</option>
+                <option value="36">ลพบุรี</option>
+                <option value="37">ชุมพร</option>
+                <option value="38">นครพนม</option>
+                <option value="39">สุพรรณบุรี</option>
+                <option value="40">ฉะเชิงเทรา</option>
+                <option value="41">มหาสารคาม</option>
+                <option value="42">ราชบุรี</option>
+                <option value="43">ตรัง</option>
+                <option value="44">ปราจีนบุรี</option>
+                <option value="45">กระบี่</option>
+                <option value="46">พิจิตร</option>
+                <option value="47">ยะลา</option>
+                <option value="48">ลำพูน</option>
+                <option value="49">นราธิวาส</option>
+                <option value="50">ชลบุรี</option>
+                <option value="51">มุกดาหาร</option>
+                <option value="52">บึงกาฬ</option>
+                <option value="53">พังงา</option>
+                <option value="54">ยโสธร</option>
+                <option value="55">หนองบัวลำภู</option>
+                <option value="56">สระบุรี</option>
+                <option value="57">ระยอง</option>
+                <option value="58">พัทลุง</option>
+                <option value="59">ระนอง</option>
+                <option value="60">อำนาจเจริญ</option>
+                <option value="61">หนองคาย</option>
+                <option value="62">ตราด</option>
+                <option value="63">พระนครศรีอยุธยา </option>
+                <option value="64">สตูล</option>
+                <option value="65">ชัยนาท</option>
+                <option value="66">นครปฐม</option>
+                <option value="67">นครนายก</option>
+                <option value="68">ปัตตานี</option>
+                <option value="69">กรุงเทพมหานคร</option>
+                <option value="70">ปทุมธานี</option>
+                <option value="71">สมุทรปราการ</option>
+                <option value="72">อ่างทอง</option>
+                <option value="73">สมุทรสาคร</option>
+                <option value="74">สิงห์บุรี</option>
+                <option value="75">นนทบุรี</option>
+                <option value="76">ภูเก็ต</option>
+                <option value="77">สมุทรสงคราม</option>
+
+
+              </select>
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+          </div>
+
+          <h5>หมายเลยทะเบียนรถ</h5>
+          <div class="container">License Plate no :</div>
+          <input class="d-block" type="text" required>
+        </div>
+
+        <div class="mb-3 ">
+          <h5><label> ป้ายทะเบียนสี/License Plate Color :</label></h5>
+          <div class="row mb-2">
+            <div class="col-md-2">
+              <input type="radio" name="color" required /> ขาว
+              <div class="container">White</div>
+            </div>
+            <div class="col-md-2">
+              <input type="radio" name="color" required /> เหลือง
+              <div class="container">Yellow</div>
+            </div>
+            <div class="col-md-2">
+              <input type="radio" name="color" required /> เขียว
+              <div class="container">Green</div>
+            </div>
+            <div class="col-md-2">
+              <input type="radio" name="color" required /> แดง
+              <div class="container">Red</div>
+            </div>
+            <div class="col-md-2">
+              <input type="radio" name="color" required /> ฟ้า
+              <div class="container">Blue</div>
+            </div>
+            <div class="col-md-2">
+              <input type="radio" name="color" required />
+              อื่นๆ/Other <input type="box" name="color" required />
+            </div>
+          </div>
+        </div>
+        <div class="invalid-feedback">
+          กรุณาเลือกสีป้ายทะเบียน
+        </div>
+    </div>
+
+    <h5>กระทำผิดฐาน/Committing the following offenses :</h5>
+
+    <h5><label for="username"> ๑.ขับรถ/Driving </label></h5>
+    <div class="row mb-3">
+
+      <div class="col-md-4">
+        <input type="checkbox" name="drive" required /> ฝ่าฝืนสัญญาณไฟจราจรสีแดง
+        <div class="container">Violation of red light</div>
+      </div>
+      <div class="col-md-4">
+        <input type="checkbox" name="drive" required /> ในลักษณะกีดขวางการจราจร
+        <div class="container">In a manner that blocks the traffic</div>
+      </div>
+      <div class="col-md-4">
+        <input type="checkbox" name="drive" required /> ฝ่าฝืนเครื่องหมายบนทางพื้น
+        <div class="container">Violation of signals on road surface</div>
+      </div>
+      <div class="col-md-4">
+        <input type="checkbox" name="drive" required /> ไม่ใกล้ขอบทางเดินรถด้านซ้าย
+        <div class="container">Not keeping to the outermost left-hand side lane</div>
+      </div>
+      <div class="col-md-4">
+        <input type="checkbox" name="drive" required /> ฝ่าฝืนเครื่องหมายจราจรห้าม.....
+        <div class="container">Violation of traffic sign prohibiting</div>
+      </div>
+      <div class="col-md-4">
+        <input type="checkbox" name="drive" required /> แซงเมื่อเข้าที่คับขัน
+        <div class="container">Overtaking another vehicle when entering congested area</div>
+      </div>
+    </div>
+    <div class="invalid-feedback">
+      Please check.
+    </div>
+
+    <div class="mb-3 ">
+      <h5><label for="username"> ๒.หยุดรถ/Stop</label></h5>
+      <div class="row mb-3">
+
+        <div class="col-md-4">
+          <input type="checkbox" name="drive" required /> ในลักษณะกีดขวางการจราจร
+          <div class="container">In a manner that blocks the traffic</div>
+        </div>
+        <div class="col-md-4">
+          <input type="checkbox" name="drive" required /> ในเขตห้ามหยุด
+          <div class="container">In the non-stop zone</div>
+        </div>
+        <div class="col-md-4">
+          <input type="checkbox" name="drive" required /> รอสัญญาณล้ำแนว
+          <div class="container">Beyond the stop line when waiting the traffic light</div>
+        </div>
+      </div>
+    </div>
+    <div class="invalid-feedback">
+      Please check.
+    </div>
+
+    <div class="mb-3 ">
+      <h5><label for="username"> ๓.จอดรถไว้/Parking</label></h5>
+      <div class="row mb-3">
+
+        <div class="col-md-4">
+          <input type="checkbox" name="drive" required /> ในลักษณะกีดขวางการจราจร
+          <div class="container">In a manner that blocks the traffic</div>
+        </div>
+        <div class="col-md-4">
+          <input type="checkbox" name="drive" required /> บนทางเท้า
+          <div class="container">On the footpath</div>
+        </div>
+        <div class="col-md-4">
+          <input type="checkbox" name="drive" required /> ในเขตห้ามจอด.......
+          <div class="container">In the forbidden zone</div>
+        </div>
+        <div class="col-md-4">
+          <input type="checkbox" name="drive" required /> ไม่ชิดขอบทางด้านซ้าย
+          <div class="container">Not adjacent to the blocks left-hand side lane</div>
+        </div>
+        <div class="col-md-4">
+          <input type="checkbox" name="drive" required /> ไม่ขนานชิดขอบทาง
+          <div class="container">Not adjacent to the side of the road</div>
+        </div>
+        <div class="col-md-4">
+          <input type="checkbox" name="drive" required /> ซ้อนคัน
+          <div class="container">Double parking</div>
+        </div>
+      </div>
+    </div>
+    <div class="invalid-feedback">
+      Please check.
+    </div>
+
+    <div class="mb-3">
+      <label for="Other">๔.อื่นๆ / Other</label>
+      <input type="text" class="form-control" id="Other" placeholder="กรอกข้อมูลอื่นๆ">
+    </div>
+
+    <!-- -------- สถานที่เกิดเหตุ --------- -->
+    <class class="row">
+      <div class="col-md-4 mb-3">
+        <h6>เหตุเกิดที่ ตรอก/ซอย </h6>
+        <h6>Place of incident/Alley </h6>
+        <input class="form-control" required>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <h6>ถนน </h6>
+        <h6>Road </h6>
+        <input class="form-control" required>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <h6>ตำบล/แขวง </h6>
+        <h6>Sub-district </h6>
+        <input class="form-control" required>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <h6>อำเภอ/เขต </h6>
+        <h6>District </h6>
+        <input class="form-control" required>
+      </div>
+
+      <div class="col-md-4">
+        <input type="checkbox" name="province" required /> กรุงเทพมหานคร
+        <div class="container">Bangkok</div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <input type="checkbox" name="province" required /> จังหวัด
+        <div class="container">Province</div>
+        <input type="text" class="form-control" id="Other">
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <h6>เมื่อวันที่ </h6>
+        <h6>Date </h6>
+        <input class="form-control" required>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <h6>เดือน </h6>
+        <h6>Month </h6>
+        <input class="form-control" required>
+      </div>
+
+      <div class="col-md-2 mb-3">
+        <h6>พ.ศ. </h6>
+        <h6>Year </h6>
+        <input class="form-control" required>
+      </div>
+
+      <div class="col-md-2 mb-3">
+        <h6>เวลา &emsp;&emsp;&emsp;&emsp;น.</h6>
+        <h6>At &emsp;&emsp;&emsp;&emsp;&emsp;hrs.</h6>
+        <input class="form-control" required>
+      </div>
+
+      <div>
+        &emsp; &emsp;&emsp;อาศัยอำนาจตามความในมาตรา&nbsp;๑๔๐ วรรคหนึ่ง แห่ง พ.ร.บ.จราจรทางบก พ.ศ.๒๕๒๒
+        ซึ่งแก้ไขเพิ่มเติมโดย พ.ร.บ.จราจรทางบก (ฉบับที่ ๙) และมาตรา ๑๔๑ แห่ง
+        พ.ร.บ.จราจรทางบก พ.ศ.๒๕๒๒ ซึ่งแก้ไขเพิ่มเติมโดย พ.ร.บ.จราจรทางบก พ.ศ. ๒๕๕๗(ฉบับที่ ๑๑) พ.ศ.๒๕๕๙
+        ให้ผู้ขับขี่หรือเจ้าของรถหรือผู้ครอบครองรถไปชำระค่าปรับตาม<b>ข้อกำหนดสำนักงานตำรวจแห่งชาติ</b>&nbsp;จำนวนเงิน
+        <input type="text" class="col-md-1 fa-box " onKeyPress="CheckNum()" required> บาท ต่อพนักงานสอบสวน ณ
+        สถานีตำรวจ <input type="text" class=" fa-box" required>&nbsp;&nbsp;หรือ&nbsp;&nbsp;
+        <input type="text" class="fa-box" placeholder="" required>&nbsp;&nbsp;หรือ&nbsp;
+        ชำระด้วยวิธีอื่นใดตามที่ระบุไว้ด้านหลังใบสั่งนี้ <b><u>ภายใน 7 วันนับแต่วันที่ได้รับใบสั่ง</u></b>
+        <div>
+          &emsp; &emsp;&emsp;By virtue of Section 140 paragraph 1 of the Road Traffic Act B.E. 2522(1979),as amended by
+          the road
+          Traffic Act(No.9),B.E. 2557(2014) and section 141 of the Road Traffic Act B.E.2522(1979),as amended by the
+          Road Traffic Act
+          (No.11),B.E.2559(2016),the driver,owner of possessor of conveyance shall pay the fine to the amount of
+          <input type="text" class="col-md-1 mb-1 fa-box " onKeyPress="CheckNum()" required>baht in accordance with
+          regulations of Royal
+          Thai Police to the inquiry officail at <input type="text" class=" fa-box" required>Police Station or
+          <input type="text" class="fa-box" placeholder="" required>or pay the fine through other methods as specified
+          at the back
+          of this traffic ticket <b><u>wihtin 7 days upon recipt of the traffic ticket.</u></b>
+        </div>
+
+        <input type="checkbox" name="tsp" required />
+        &nbsp;ส่งทางไปรษณีย์พร้อมพยานหลักฐานและให้เจ้าของรถหรือผู้ครอบครองรถไปชำระค่าปรับตามที่ระบุไว้ข้างต้นภายในสามสิบวันนับแต่วันที่ได้รับใบสั่ง
+        Sending by post with evidence to the person
+        who owns or has the vehicle in possession to pay fine as specified above within 30 days upon recipt of the
+        traffic ticket
+      </div>
+
+      <div class="col-md-8 mb-1">
+        <h5>ลงชื่อ ผู้ออกใบสั่ง </h5>
+        <h6>Signature of traffic ticket issuing officer </h6>
+        <input class="form-control" required>
+      </div>
+
+      <div class="col-md-4">
+        <input type="checkbox" name="drive" required /> เจ้าพนักงานจราจร
+        <div class="container">Traffic Officer</div>
+
+        <input type="checkbox" name="drive" required /> พนักงานเจ้าหน้าที่
+        <div class="container">Competent Officer</div>
+      </div>
+
+      <div class="col-md-2 mb-0">
+        <h6>ยศ </h6>
+        <h6>Rank</h6>
+        <input class="form-control" required>
+      </div>
+
+      <div class="col-md-3 mb-1">
+        <h6>ชื่อ </h6>
+        <h6>Firstname </h6>
+        <input class="form-control" required>
+      </div>
+
+      <div class="col-md-3 mb-1">
+        <h6>ชื่อสกุล </h6>
+        <h6>Lastname </h6>
+        <input class="form-control" required>
+      </div>
+
+      <div class="col-md-3 mb-0">
+        <h6>รหัส </h6>
+        <h6>Code </h6>
+        <input class="form-control" required>
+      </div>
+
+      <!-- -------ใบรับแทนใบอนุญาติขับขี่------ -->
+      <div class="container">
+        <div class="py-3 text-center">
+          <h5>ใบรับแทนใบอนุญาติขับขี่</h5>
+          <p class="text-center">Substitude of the Driver's License</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-0">
+        <h6>ชื่อผู้ขับขี่ </h6>
+        <h6>Drive's Name :</h6>
+        <input class="form-control" required>
+      </div>
+
+      <div class="col-md-6 mb-2">
+        <h6>เลขประจำตัวประชาชน </h6>
+        <h6>ID no : </h6>
+        <input class="form-control" required>
+      </div>
+
+      <div class="col-md-6 mb-0">
+        <h6>ใบอนุญาติขับขี่/ฉบับที่ </h6>
+        <h6>Drive's License No./Book No : </h6>
+        <input class="form-control" required>
+      </div>
+
+      <div class="col-md-6 mb-2">
+        <h6>วันอนุญาติ </h6>
+        <h6>Date of issue : </h6>
+        <input class="form-control" required>
+      </div>
+
+      <div class="col md-2">
+        <h6>ออกให้โดยนายทะเบียน </h6>
+        <h6>Issue by the Register of </h6>
+      </div>
+
+      <div class="col-md-0">
+        <input type="checkbox" name="province" required /> กรุงเทพมหานคร
+        <div class="container">Bangkok</div>
+      </div>
+
+      <div class="col-md-3">
+        <h6>สาขา </h6>
+        <h6>Branch :</h6>
+        <input class="form-control" required>
+      </div>
+
+      <div class="col-md-3 mb-2">
+        <h6>จังหวัด </h6>
+        <h6>Province :</h6>
+        <input class="form-control" required>
+      </div>
+
+      <div class="col-md-3 mb-2">
+        <h6>สาขา </h6>
+        <h6>Branch :</h6>
+        <input class="form-control" required>
+      </div>
+
+      <div class="container">
+        <div class="mb-3 ">
+          <h5><label> ใบขับขี่/Drive's License of:</label></h5>
+          <div class="row mb-2">
+            <div class="col-md-2">
+              <input type="radio" name="CL" required /> รถจักรยานยนต์
+              <div class="container">Motorcycle</div>
+            </div>
+            <div class="col-md-2">
+              <input type="radio" name="CL" required /> รถสามล้อ
+              <div class="container">Tricycle</div>
+            </div>
+            <div class="col-md-2">
+              <input type="radio" name="CL" required /> รถยนต์
+              <div class="container">Automobile</div>
+            </div>
+            <div class="col-md-2">
+              <input type="radio" name="CL" required /> รถขนส่ง
+              <div class="container">Truk</div>
+            </div>
+            <div class="col-md-2">
+              <input type="radio" name="CL" required />
+              อื่นๆ/Other <input type="box" name="color" required />
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3 ">
+          <h5><label> ชนิด/Type:</label></h5>
+          <div class="row mb-2">
+            <div class="col-md-2">
+              <input type="radio" name="type" required /> ชั่วคราว
+              <div class="container">Temporary</div>
+            </div>
+            <div class="col-md-2">
+              <input type="radio" name="type" required /> ตลอดชีพ
+              <div class="container">Lifetime</div>
+            </div>
+            <div class="col-md-2">
+              <input type="radio" name="type" required /> สาธารณะ
+              <div class="container">Public</div>
+            </div>
+            <div class="col-md-2">
+              <input type="radio" name="type" required /> บุคคลชนิดที่
+              <div class="container">Private No.</div>
+            </div>
+            <div class="col-md-2">
+              <input type="radio" name="type" required /> ทุกประเภทชนิดที่
+              <div class="container">All type no.</div>
+            </div>
+            <div class="col-md-2">
+              <input type="radio" name="type" required /> ระหว่างประเทศ
+              <div class="container">International</div>
+            </div>
+          </div>
+          <h6>ข้าพเจ้าผู้ออกใบสั่งฉบับนี้ได้เรียกเก็บใบอนุญาติขับขี่ไว้
+            และให้ใช้เป็นใบแทนใบอนุญาติขับขี่ได้เป็นการชั่วคราว ไม่เกิน ๗ วัน
+            นับแต่วันที่ออกใบรับแทนใบอนุญาติขับขี่นี้</h6>
+          <h6>I,the traffic issuing officer,have seized the Driver's License and issued this traffic ticket to
+            be used temporarity as a substitude of the driver's license not more than 7 days upon recipt of the traffic
+            ticket</h6>
+
+          <div class="row mb-2">
+            <div class="col-md-12 mb-3">
+              <h5>ลงชื่อ &emsp;&emsp;&emsp;&emsp;ผู้ออกใบสั่ง</h5>
+              <h6>Signed &emsp;&emsp;&emsp;&emsp;&emsp;Traffic Ticket Issuing Officer</h6>
+              <input class="form-control" required>
+            </div><br>
+
+            <div class="col-md-2 mb-0">
+              <h6>ยศ </h6>
+              <h6>Rank</h6>
+              <input class="form-control" required>
+            </div>
+
+            <div class="col-md-3 mb-1">
+              <h6>ชื่อ </h6>
+              <h6>Firstname </h6>
+              <input class="form-control" required>
+            </div>
+
+            <div class="col-md-3 mb-1">
+              <h6>ชื่อสกุล </h6>
+              <h6>Lastname </h6>
+              <input class="form-control" required>
+            </div>
+
+            <div class="col-md-3 mb-0">
+              <h6>รหัส </h6>
+              <h6>Code </h6>
+              <input class="form-control" required>
+            </div>
+
+            <form class="needs-validation" novalidate>
+              <hr class="mb-5 md-2">
+              <button class="btn btn-primary btn-lg btn-block" type="submit">กดยืนยัน</button>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+  </div>
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+</html>
